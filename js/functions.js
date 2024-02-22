@@ -1,12 +1,14 @@
 // Проверка длины строки
-const checkLength = (string, maxLength) => {
-  return string.length <= maxLength
-}
+const checkLength = (string, maxLength) => string.length <= maxLength;
+
+checkLength();
 
 // Проверка на полиндромность
 function palindrom (string) {
-	return string.split('').reverse().join('').replaceAll(' ', '').toLowerCase() === string.replaceAll(' ', '').toLowerCase()
+  return string.split('').reverse().join('').replaceAll(' ', '').toLowerCase() === string.replaceAll(' ', '').toLowerCase();
 }
+
+palindrom();
 
 // Проверка isNumber
 function isNumber (string) {
@@ -16,5 +18,7 @@ function isNumber (string) {
       checkString += string[i];
     }
   }
- return checkString || NaN;
+  return checkString || NaN;
 }
+
+isNumber();
